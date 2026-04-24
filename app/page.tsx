@@ -210,36 +210,46 @@ export default function MagnumOpus() {
       <div className="min-h-screen bg-gradient-to-b from-[#f0f6ff] to-[#e4eef8] flex flex-col items-center font-sans text-[#1a1a2e]">
 
         {/* Header */}
-        <header className="flex items-center justify-between px-4 md:px-8 py-3 md:py-4 w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 flex-wrap gap-2">
-          <div className="flex items-center gap-3 md:gap-4">
-            <Image
-              src="/images/magnum-opus-logo.png"
-              alt="Magnum Opus Cloud Computing Logo"
-              width={180}
-              height={108}
-              className="h-14 md:h-16 w-auto object-contain"
-              priority
-            />
-            <div className="flex flex-col leading-tight">
-              <span className="text-white font-bold text-base md:text-xl tracking-wide">Magnum Opus</span>
-              <span className="text-[#7ec8f4] font-medium text-sm md:text-base tracking-wide">Cloud Computing</span>
+        <header className="flex flex-col px-4 md:px-8 py-3 md:py-4 w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 gap-1">
+          {/* Top row: logo + name on left, YouTube on right */}
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center gap-3 md:gap-4">
+              <Image
+                src="/images/magnum-opus-logo.png"
+                alt="Magnum Opus Cloud Computing Logo"
+                width={180}
+                height={108}
+                className="h-14 md:h-16 w-auto object-contain"
+                priority
+              />
+              <div className="flex flex-col leading-tight">
+                <span className="text-white font-bold text-base md:text-xl tracking-wide">Magnum Opus</span>
+                <span className="text-[#7ec8f4] font-medium text-sm md:text-base tracking-wide">Cloud Computing</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 md:gap-5">
+              {/* Emails: hidden on mobile (shown below), visible on sm+ inline */}
+              <div className="hidden sm:flex items-center gap-2 md:gap-3 text-xs md:text-sm">
+                <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">support@magnumopus.cloud</a>
+                <span className="text-[rgba(150,190,240,0.4)]">|</span>
+                <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">sales@magnumopus.cloud</a>
+              </div>
+              <a
+                href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors flex-shrink-0"
+                aria-label="Magnum Opus YouTube Channel"
+              >
+                <YouTubeIcon />
+              </a>
             </div>
           </div>
-          <div className="flex items-center gap-2 md:gap-5 flex-wrap justify-end">
-            <div className="hidden sm:flex items-center gap-2 md:gap-3 text-xs md:text-sm flex-wrap">
-              <span className="text-[rgba(150,190,240,0.9)]">support@magnumopus.cloud</span>
-              <span className="text-[rgba(150,190,240,0.5)]">|</span>
-              <span className="text-[rgba(150,190,240,0.9)]">sales@magnumopus.cloud</span>
-            </div>
-            <a
-              href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors flex-shrink-0"
-              aria-label="Magnum Opus YouTube Channel"
-            >
-              <YouTubeIcon />
-            </a>
+          {/* Mobile-only email row */}
+          <div className="flex sm:hidden items-center gap-2 text-[11px] pb-1">
+            <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">support@magnumopus.cloud</a>
+            <span className="text-[rgba(150,190,240,0.4)]">|</span>
+            <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">sales@magnumopus.cloud</a>
           </div>
         </header>
 
