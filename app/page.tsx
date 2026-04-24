@@ -170,7 +170,7 @@ export default function MagnumOpus() {
 
         {/* Header */}
         <header className="flex items-center justify-between px-4 md:px-8 py-3 md:py-4 w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 flex-wrap gap-2">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3 md:gap-4">
             <Image
               src="/images/magnum-opus-logo.png"
               alt="Magnum Opus Cloud Computing Logo"
@@ -179,6 +179,10 @@ export default function MagnumOpus() {
               className="h-14 md:h-16 w-auto object-contain"
               priority
             />
+            <div className="flex flex-col leading-tight">
+              <span className="text-white font-bold text-base md:text-xl tracking-wide">Magnum Opus</span>
+              <span className="text-[#7ec8f4] font-medium text-sm md:text-base tracking-wide">Cloud Computing</span>
+            </div>
           </div>
           <div className="flex items-center gap-2 md:gap-5 flex-wrap justify-end">
             <div className="hidden sm:flex items-center gap-2 md:gap-3 text-xs md:text-sm flex-wrap">
