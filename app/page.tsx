@@ -219,7 +219,7 @@ export default function MagnumOpus() {
                 alt="Magnum Opus Cloud Computing Logo"
                 width={180}
                 height={108}
-                className="h-14 md:h-16 w-auto object-contain"
+                className="h-14 md:h-16 w-auto object-contain rounded-2xl"
                 priority
               />
               <div className="flex flex-col leading-tight">
