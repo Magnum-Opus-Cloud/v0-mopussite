@@ -173,7 +173,7 @@ export default function MagnumOpus() {
           <div className="flex items-center gap-2 md:gap-3">
             <div className="relative flex-shrink-0">
               <Image
-                src="/images/magnum-opus-header-logo.png"
+                src="/images/magnum-opus-header-logo.jpg"
                 alt="Magnum Opus Cloud Computing Logo"
                 width={140}
                 height={84}
@@ -261,7 +261,7 @@ export default function MagnumOpus() {
               </p>
               <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6">
                 <Image
-                  src="/images/guacamole-login-screenshot.png"
+                  src="/images/guacamole-login-screenshot.jpg"
                   alt="Apache Guacamole Login Interface"
                   width={500}
                   height={560}
@@ -275,7 +275,7 @@ export default function MagnumOpus() {
               </p>
               <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6">
                 <Image
-                  src="/images/guacamole-connections-screenshot-2.png"
+                  src="/images/guacamole-connections-screenshot-2.jpg"
                   alt="Double-click on Windows1 connection to access desktop"
                   width={500}
                   height={400}
@@ -287,7 +287,7 @@ export default function MagnumOpus() {
               </p>
               <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6 px-2">
                 <Image
-                  src="/images/windows11-desktop-screenshot.png"
+                  src="/images/windows11-desktop-screenshot.jpg"
                   alt="Windows 11 desktop successfully logged in"
                   width={800}
                   height={600}
