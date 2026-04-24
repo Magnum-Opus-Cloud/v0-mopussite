@@ -11,6 +11,13 @@ const structuredData = {
     "Cloud computing service providing Windows 11 without AI, bloatware, or advertisements. Access a full Windows 11 desktop from any device.",
   url: "https://magnumopuscloud.com",
   email: "support@magnumopuscloud.com",
+  logo: "https://magnumopuscloud.com/images/magnum-opus-logo.png",
+  image: "https://magnumopuscloud.com/images/magnum-opus-logo.png",
+  foundingLocation: {
+    "@type": "Place",
+    addressCountry: "US",
+  },
+  areaServed: "US",
   sameAs: ["https://youtube.com/@magnumopuscloud"],
   offers: {
     "@type": "Offer",
@@ -19,6 +26,35 @@ const structuredData = {
       "Full Windows 11 experience accessible from any device - phone, tablet, laptop, or desktop. No bloatware, no AI, free product key included.",
     price: "0",
     priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    availableAtOrFrom: {
+      "@type": "Place",
+      addressCountry: "US",
+    },
+  },
+}
+
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Magnum Opus Cloud Computing",
+  url: "https://magnumopuscloud.com",
+  description:
+    "Access Windows 11 from any device with no bloatware, no AI, and no advertisements. Free Windows 11 product key included.",
+  inLanguage: "en-US",
+  publisher: {
+    "@type": "Organization",
+    name: "Magnum Opus Cloud Computing",
+    url: "https://magnumopuscloud.com",
+    logo: "https://magnumopuscloud.com/images/magnum-opus-logo.png",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://magnumopuscloud.com/?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
   },
 }
 
@@ -164,6 +200,11 @@ export default function MagnumOpus() {
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <Script
+        id="website-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#f0f6ff] to-[#e4eef8] flex flex-col items-center font-sans text-[#1a1a2e]">
