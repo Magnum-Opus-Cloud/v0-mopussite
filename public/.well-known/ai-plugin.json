@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Magnum Opus Cloud Computing",
+  "name_for_model": "magnum_opus_cloud",
+  "description_for_human": "Access a full Windows 11 desktop from any device with no bloatware, no AI, and no advertisements. Free Windows 11 product key included.",
+  "description_for_model": "Magnum Opus Cloud Computing is a US-based cloud computing service that provides clean, bloatware-free Windows 11 desktops accessible from any device via browser or the Windows App. The service removes Microsoft AI features and advertisements. Users connect via Apache Guacamole in a browser or the Windows App on iOS, Android, Windows, macOS, or Chromebook. Support is available at support@magnumopuscloud.com.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://magnumopuscloud.com/openapi.json"
+  },
+  "logo_url": "https://magnumopuscloud.com/images/magnum-opus-logo.png",
+  "contact_email": "support@magnumopuscloud.com",
+  "legal_info_url": "https://magnumopuscloud.com"
+}

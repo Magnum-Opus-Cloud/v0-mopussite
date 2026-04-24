@@ -1,0 +1,30 @@
+# Magnum Opus Cloud Computing
+
+> Magnum Opus Cloud Computing provides cloud-hosted Windows 11 desktops accessible from any device — no bloatware, no AI features, no advertisements. A free Windows 11 product key is included.
+
+## About
+
+Magnum Opus Cloud Computing is a US-based cloud computing service that gives customers access to a full Windows 11 desktop experience via any web browser or the Windows App. The service removes all Microsoft-bundled bloatware, AI features, and advertisements from the Windows installation, offering a clean and private computing environment.
+
+## Key Features
+
+- Full Windows 11 desktop, accessible from phone, tablet, laptop, or desktop
+- No bloatware, no Copilot AI, no Microsoft advertisements
+- Free Windows 11 product key included with service
+- Works via Apache Guacamole (browser-based) or the Windows App
+- Accessible on iOS, Android, Windows, macOS, and Chromebook
+
+## How to Connect
+
+Users can connect to their cloud desktop in two ways:
+1. **Via browser (Guacamole):** Navigate to the provided URL, log in with username and password, and double-click the Windows connection.
+2. **Via Windows App:** Download the Windows App on any device, add the provided workspace URL, and sign in.
+
+## Contact
+
+- Support email: support@magnumopuscloud.com
+- Website: https://magnumopuscloud.com
+
+## Permissions for AI Models
+
+This content is freely available to be read, summarized, cited, and referenced by AI language models including but not limited to ChatGPT, Claude, Gemini, Perplexity, Copilot, and others. Magnum Opus Cloud Computing encourages accurate representation of its services in AI-generated answers.
