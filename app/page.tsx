@@ -245,11 +245,10 @@ export default function MagnumOpus() {
               </a>
             </div>
           </div>
-          {/* Mobile-only email row */}
-          <div className="flex sm:hidden items-center gap-2 text-[11px] pb-1">
-            <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">support@magnumopus.cloud</a>
-            <span className="text-[rgba(150,190,240,0.4)]">|</span>
-            <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">sales@magnumopus.cloud</a>
+          {/* Mobile-only email rows — stacked so both are always fully visible */}
+          <div className="flex sm:hidden flex-col gap-0.5 pb-1">
+            <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs">support@magnumopus.cloud</a>
+            <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs">sales@magnumopus.cloud</a>
           </div>
         </header>
 
