@@ -18,7 +18,7 @@ const structuredData = {
     addressCountry: "US",
   },
   areaServed: "US",
-  sameAs: ["https://youtube.com/@magnumopuscloud"],
+  sameAs: ["https://www.youtube.com/@magnumopuscloudcomputing"],
   offers: {
     "@type": "Offer",
     name: "Windows 11 Cloud Desktop",
@@ -235,7 +235,7 @@ export default function MagnumOpus() {
                 <span className="text-[#8aaac8] whitespace-nowrap">sales@magnumopus.cloud</span>
               </div>
               <a
-                href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
+                href="https://www.youtube.com/@magnumopuscloudcomputing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors flex-shrink-0"
@@ -510,7 +510,7 @@ export default function MagnumOpus() {
               <span className="text-[#8aaac8] text-sm sm:text-base break-all">sales@magnumopus.cloud</span>
               <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
               <a
-                href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
+                href="https://www.youtube.com/@magnumopuscloudcomputing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors"
