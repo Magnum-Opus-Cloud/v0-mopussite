@@ -288,6 +288,18 @@ export default function MagnumOpus() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Desktop &amp; Laptop
             </h2>
+            
+            {/* Video Tutorial */}
+            <div className="w-full aspect-video mb-6 md:mb-8 rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
+              <iframe
+                src="https://www.youtube.com/embed/7TIDAVf7_XE"
+                title="How To Login Via Desktop & Laptop - Video Tutorial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            
             <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)] mb-8 space-y-4">
               <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
                 <span className="font-semibold text-[#a0a0a0]">1. Turn on your VPN (Optional).</span>
