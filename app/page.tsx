@@ -283,6 +283,19 @@ export default function MagnumOpus() {
             <div className="bg-yellow-400/20 text-yellow-200 border border-yellow-400/30 text-center font-bold text-base sm:text-lg py-3 px-4 rounded-lg mb-6 md:mb-8 leading-snug">
               Currently, we have launched the desktop version and mobile will be available soon.
             </div>
+            
+            {/* Intro Short Video */}
+            <div className="flex justify-center mb-6 md:mb-8">
+              <div className="w-full max-w-[320px] aspect-[9/16] rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
+                <iframe
+                  src="https://www.youtube.com/embed/gvzp1IO_1ok"
+                  title="Magnum Opus Cloud Computing - Introduction"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
 
             {/* Desktop Login Instructions */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
