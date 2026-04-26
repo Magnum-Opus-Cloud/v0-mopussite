@@ -18,7 +18,7 @@ const structuredData = {
     addressCountry: "US",
   },
   areaServed: "US",
-  sameAs: ["https://youtube.com/@magnumopuscloud"],
+  sameAs: ["https://www.youtube.com/@magnumopuscloudcomputing"],
   offers: {
     "@type": "Offer",
     name: "Windows 11 Cloud Desktop",
@@ -230,12 +230,12 @@ export default function MagnumOpus() {
             <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
               {/* Emails inline on md+ only */}
               <div className="hidden md:flex items-center gap-2 text-sm">
-                <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors whitespace-nowrap">support@magnumopus.cloud</a>
+                <span className="text-[#8aaac8] whitespace-nowrap">support@magnumopus.cloud</span>
                 <span className="text-[rgba(150,190,240,0.4)]">|</span>
-                <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors whitespace-nowrap">sales@magnumopus.cloud</a>
+                <span className="text-[#8aaac8] whitespace-nowrap">sales@magnumopus.cloud</span>
               </div>
               <a
-                href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
+                href="https://www.youtube.com/@magnumopuscloudcomputing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors flex-shrink-0"
@@ -247,8 +247,8 @@ export default function MagnumOpus() {
           </div>
           {/* Mobile + tablet email rows — hidden on md and above */}
           <div className="flex md:hidden flex-col gap-0.5 pb-1">
-            <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-xs sm:text-sm">support@magnumopus.cloud</a>
-            <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-xs sm:text-sm">sales@magnumopus.cloud</a>
+            <span className="text-[#8aaac8] text-xs sm:text-sm">support@magnumopus.cloud</span>
+            <span className="text-[#8aaac8] text-xs sm:text-sm">sales@magnumopus.cloud</span>
           </div>
         </header>
 
@@ -283,11 +283,36 @@ export default function MagnumOpus() {
             <div className="bg-yellow-400/20 text-yellow-200 border border-yellow-400/30 text-center font-bold text-base sm:text-lg py-3 px-4 rounded-lg mb-6 md:mb-8 leading-snug">
               Currently, we have launched the desktop version and mobile will be available soon.
             </div>
+            
+            {/* Intro Short Video */}
+            <div className="flex justify-center mb-6 md:mb-8">
+              <div className="w-full max-w-[320px] aspect-[9/16] rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
+                <iframe
+                  src="https://www.youtube.com/embed/gvzp1IO_1ok"
+                  title="Magnum Opus Cloud Computing - Introduction"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
 
             {/* Desktop Login Instructions */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Desktop &amp; Laptop
             </h2>
+            
+            {/* Video Tutorial */}
+            <div className="w-full aspect-video mb-6 md:mb-8 rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
+              <iframe
+                src="https://www.youtube.com/embed/7TIDAVf7_XE"
+                title="How To Login Via Desktop & Laptop - Video Tutorial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            
             <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)] mb-8 space-y-4">
               <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
                 <span className="font-semibold text-[#a0a0a0]">1. Turn on your VPN (Optional).</span>
@@ -382,9 +407,7 @@ export default function MagnumOpus() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-base sm:text-lg md:text-xl text-[#a0a0a0] font-semibold">Support</p>
-                    <a href="mailto:support@magnumopus.cloud" className="text-sm sm:text-base md:text-lg text-[#4da6ff] hover:underline break-all">
-                      support@magnumopus.cloud
-                    </a>
+                    <span className="text-sm sm:text-base md:text-lg text-[#8aaac8] break-all">support@magnumopus.cloud</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 sm:p-4 bg-[#0a1628] rounded-lg">
@@ -393,9 +416,7 @@ export default function MagnumOpus() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-base sm:text-lg md:text-xl text-[#a0a0a0] font-semibold">Sales</p>
-                    <a href="mailto:sales@magnumopus.cloud" className="text-sm sm:text-base md:text-lg text-green-400 hover:underline break-all">
-                      sales@magnumopus.cloud
-                    </a>
+                    <span className="text-sm sm:text-base md:text-lg text-[#8aaac8] break-all">sales@magnumopus.cloud</span>
                   </div>
                 </div>
               </div>
@@ -509,16 +530,12 @@ export default function MagnumOpus() {
         <footer className="w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-t border-[rgba(0,120,212,0.3)] py-6 md:py-8 mt-auto">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-2 sm:gap-4 mb-4">
-              <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-sm sm:text-base break-all">
-                support@magnumopus.cloud
-              </a>
+              <span className="text-[#8aaac8] text-sm sm:text-base break-all">support@magnumopus.cloud</span>
               <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
-              <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-sm sm:text-base break-all">
-                sales@magnumopus.cloud
-              </a>
+              <span className="text-[#8aaac8] text-sm sm:text-base break-all">sales@magnumopus.cloud</span>
               <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
               <a
-                href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
+                href="https://www.youtube.com/@magnumopuscloudcomputing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors"
