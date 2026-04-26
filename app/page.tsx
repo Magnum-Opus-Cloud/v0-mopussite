@@ -207,32 +207,32 @@ export default function MagnumOpus() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }}
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-[#f0f6ff] to-[#e4eef8] flex flex-col items-center font-sans text-[#1a1a2e]">
+      <div className="min-h-screen bg-[#0a1628] flex flex-col items-center font-sans text-[#e8f0fb]">
 
         {/* Header */}
-        <header className="flex flex-col px-4 md:px-8 py-3 md:py-4 w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 gap-1">
+        <header className="flex flex-col w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 px-3 sm:px-6 md:px-8 pt-2 pb-2 gap-1">
           {/* Top row: logo + name on left, YouTube on right */}
-          <div className="flex items-center justify-between w-full">
-            <div className="flex items-center gap-3 md:gap-4">
+          <div className="flex items-center justify-between w-full gap-2">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
               <Image
                 src="/images/magnum-opus-logo.png"
                 alt="Magnum Opus Cloud Computing Logo"
                 width={180}
                 height={108}
-                className="h-14 md:h-16 w-auto object-contain rounded-2xl"
+                className="h-10 sm:h-12 md:h-16 w-auto object-contain rounded-xl flex-shrink-0"
                 priority
               />
-              <div className="flex flex-col leading-tight">
-                <span className="text-white font-bold text-base md:text-xl tracking-wide">Magnum Opus</span>
-                <span className="text-[#7ec8f4] font-medium text-sm md:text-base tracking-wide">Cloud Computing</span>
+              <div className="flex flex-col leading-tight min-w-0">
+                <span className="text-[#a0a0a0] font-bold text-sm sm:text-base md:text-xl tracking-wide truncate">Magnum Opus</span>
+                <span className="text-[#7ec8f4] font-medium text-sm sm:text-base md:text-lg tracking-wide truncate">Cloud Computing</span>
               </div>
             </div>
-            <div className="flex items-center gap-3 md:gap-5">
-              {/* Emails: hidden on mobile (shown below), visible on sm+ inline */}
-              <div className="hidden sm:flex items-center gap-2 md:gap-3 text-xs md:text-sm">
-                <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">support@magnumopus.cloud</a>
+            <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
+              {/* Emails inline on md+ only */}
+              <div className="hidden md:flex items-center gap-2 text-sm">
+                <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors whitespace-nowrap">support@magnumopus.cloud</a>
                 <span className="text-[rgba(150,190,240,0.4)]">|</span>
-                <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors">sales@magnumopus.cloud</a>
+                <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors whitespace-nowrap">sales@magnumopus.cloud</a>
               </div>
               <a
                 href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
@@ -245,33 +245,33 @@ export default function MagnumOpus() {
               </a>
             </div>
           </div>
-          {/* Mobile-only email rows — stacked so both are always fully visible */}
-          <div className="flex sm:hidden flex-col gap-0.5 pb-1">
-            <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs">support@magnumopus.cloud</a>
-            <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs">sales@magnumopus.cloud</a>
+          {/* Mobile + tablet email rows — hidden on md and above */}
+          <div className="flex md:hidden flex-col gap-0.5 pb-1">
+            <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-xs sm:text-sm">support@magnumopus.cloud</a>
+            <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-xs sm:text-sm">sales@magnumopus.cloud</a>
           </div>
         </header>
 
         {/* Main Content */}
-        <main className="max-w-[760px] w-full px-4 md:px-6 py-6 md:py-10">
+        <main className="w-full max-w-3xl px-4 sm:px-6 md:px-8 py-6 md:py-10">
 
           {/* Hero Section */}
-          <section className="text-center py-8 md:py-12 px-3 md:px-4">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0078D4] mb-4 leading-tight text-balance">
+          <section className="text-center py-6 sm:py-10 md:py-12">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#0078D4] mb-4 leading-tight text-balance">
               Windows 11 Without AI <WindowsIcon />
             </h1>
-            <div className="flex flex-wrap justify-center gap-2 mb-6">
-              <span className="inline-block bg-[#0078D4]/10 text-[#0078D4] px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+            <div className="flex flex-wrap justify-center gap-2 mb-5">
+              <span className="inline-block bg-[#0078D4]/20 text-[#7ec8f4] px-3 py-1 rounded-full text-sm sm:text-base font-medium border border-[#0078D4]/30">
                 Free Product Key/COA
               </span>
-              <span className="inline-block bg-green-500/10 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+              <span className="inline-block bg-green-500/15 text-green-400 px-3 py-1 rounded-full text-sm sm:text-base font-medium border border-green-500/30">
                 No Bloatware
               </span>
-              <span className="inline-block bg-purple-500/10 text-purple-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+              <span className="inline-block bg-purple-500/15 text-purple-400 px-3 py-1 rounded-full text-sm sm:text-base font-medium border border-purple-500/30">
                 No AI
               </span>
             </div>
-            <p className="text-sm sm:text-base text-[#555] max-w-[580px] mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] max-w-xl mx-auto leading-relaxed">
               Access a full version of Windows 11 from anywhere. Connect from your phone, tablet, laptop, or desktop to a
               complete Windows 11 operating system hosted securely in the cloud. No Copilot AI, no bloatware, no Microsoft
               account needed, and no advertising in our version of Windows 11.
@@ -280,89 +280,89 @@ export default function MagnumOpus() {
 
           {/* Launch Status Banner */}
           <section className="mb-8 md:mb-12">
-            <div className="bg-yellow-200 text-[#1a1a2e] text-center font-bold text-base sm:text-lg py-2 md:py-3 px-3 md:px-4 rounded-lg mb-6 md:mb-8">
+            <div className="bg-yellow-400/20 text-yellow-200 border border-yellow-400/30 text-center font-bold text-base sm:text-lg py-3 px-4 rounded-lg mb-6 md:mb-8 leading-snug">
               Currently, we have launched the desktop version and mobile will be available soon.
             </div>
 
             {/* Desktop Login Instructions */}
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Desktop &amp; Laptop
             </h2>
-            <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-[#e5e7eb] mb-8">
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mb-3">
-                <span className="font-semibold">1. Turn on your VPN (Optional).</span>
+            <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)] mb-8 space-y-4">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
+                <span className="font-semibold text-[#a0a0a0]">1. Turn on your VPN (Optional).</span>
               </p>
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed">
-                <span className="font-semibold">2. Go to our secure webpage login </span>
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
+                <span className="font-semibold text-[#a0a0a0] block mb-1">2. Go to our secure webpage login:</span>
                 <a
                   href="https://magnumopus2.live/guacamole/#/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#0078D4] hover:underline break-all"
+                  className="text-[#4da6ff] hover:underline break-all text-sm sm:text-base"
                 >
                   https://magnumopus2.live/guacamole/#/
                 </a>
               </p>
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mt-3">
-                <span className="font-semibold">3. Please input your username and password</span> that was emailed to you
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
+                <span className="font-semibold text-[#a0a0a0]">3. Please input your username and password</span> that was emailed to you
                 from support@magnumopuscloud.com or sales@magnopus.cloud. Please check your junk and spam folders if the
                 email is not in your normal inbox.
               </p>
-              <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6">
+              <div className="flex justify-center">
                 <Image
                   src="/images/guacamole-login-screenshot.jpg"
                   alt="Apache Guacamole Login Interface"
                   width={500}
                   height={560}
-                  className="rounded-lg border border-[#ddd] shadow-md w-full max-w-xs h-auto"
+                  className="rounded-lg border border-[rgba(0,120,212,0.3)] shadow-md w-full max-w-[280px] sm:max-w-xs md:max-w-sm h-auto"
                 />
               </div>
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mt-3">
-                <span className="font-semibold">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
+                <span className="font-semibold text-[#a0a0a0]">
                   4. Please double click on the computer tab and server name (i.e. Windows1).
                 </span>
               </p>
-              <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6">
+              <div className="flex justify-center">
                 <Image
                   src="/images/guacamole-connections-screenshot-2.jpg"
                   alt="Double-click on Windows1 connection to access desktop"
                   width={500}
                   height={400}
-                  className="rounded-lg border border-[#ddd] shadow-md w-full max-w-xs h-auto"
+                  className="rounded-lg border border-[rgba(0,120,212,0.3)] shadow-md w-full max-w-[280px] sm:max-w-xs md:max-w-sm h-auto"
                 />
               </div>
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mt-3">
-                <span className="font-semibold">5. You will see the following screen and will be logged in.</span>
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
+                <span className="font-semibold text-[#a0a0a0]">5. You will see the following screen and will be logged in.</span>
               </p>
-              <div className="flex justify-center mt-4 md:mt-6 mb-4 md:mb-6 px-2">
+              <div className="flex justify-center">
                 <Image
                   src="/images/windows11-desktop-screenshot.jpg"
                   alt="Windows 11 desktop successfully logged in"
                   width={800}
                   height={600}
-                  className="rounded-lg border border-[#ddd] shadow-md w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto"
+                  className="rounded-lg border border-[rgba(0,120,212,0.3)] shadow-md w-full h-auto"
                 />
               </div>
             </div>
 
             {/* Mobile Login */}
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Smartphone
             </h2>
-            <p className="text-center text-sm sm:text-base text-[#555] mb-8">Launching soon.</p>
+            <p className="text-center text-base sm:text-lg md:text-xl text-[#8aaac8] mb-8">Launching soon.</p>
 
             {/* Q&A */}
-            <h3 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               Questions &amp; Answers
             </h3>
-            <div className="space-y-2 md:space-y-3">
+            <div className="space-y-3">
               {qaItems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-4 md:p-5 shadow-sm hover:shadow-md transition-shadow border-l-4 border-[#0078D4]"
+                  className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 border-l-4 border-[#0078D4]"
                 >
-                  <p className="font-semibold text-sm sm:text-base text-[#1a1a2e] mb-2">{item.question}</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">{item.answer}</p>
+                  <p className="font-semibold text-base sm:text-lg md:text-xl text-[#a0a0a0] mb-1 leading-snug">{item.question}</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">{item.answer}</p>
                 </div>
               ))}
             </div>
@@ -370,30 +370,30 @@ export default function MagnumOpus() {
 
           {/* Contact Us */}
           <section className="mb-8 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">Contact Us</h2>
-            <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-[#e5e7eb]">
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mb-4 md:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">Contact Us</h2>
+            <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)]">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed mb-4">
                 We would love to hear from you. Reach out to us and we will get back to you as soon as possible.
               </p>
-              <div className="space-y-3 md:space-y-4">
-                <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-[#f8fafc] rounded-lg">
-                  <div className="w-10 md:w-12 h-10 md:h-12 bg-[#0078D4]/10 rounded-full flex items-center justify-center text-[#0078D4] flex-shrink-0">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 p-3 sm:p-4 bg-[#0a1628] rounded-lg">
+                  <div className="w-10 h-10 bg-[#0078D4]/10 rounded-full flex items-center justify-center text-[#0078D4] flex-shrink-0">
                     <EmailIcon />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-sm md:text-base text-[#1a1a2e] font-semibold">Support</p>
-                    <a href="mailto:support@magnumopus.cloud" className="text-xs md:text-sm text-[#0078D4] hover:underline break-all">
+                    <p className="text-base sm:text-lg md:text-xl text-[#a0a0a0] font-semibold">Support</p>
+                    <a href="mailto:support@magnumopus.cloud" className="text-sm sm:text-base md:text-lg text-[#4da6ff] hover:underline break-all">
                       support@magnumopus.cloud
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-[#f8fafc] rounded-lg">
-                  <div className="w-10 md:w-12 h-10 md:h-12 bg-green-500/10 rounded-full flex items-center justify-center text-green-600 flex-shrink-0">
+                <div className="flex items-center gap-3 p-3 sm:p-4 bg-[#0a1628] rounded-lg">
+                  <div className="w-10 h-10 bg-green-500/15 rounded-full flex items-center justify-center text-green-400 flex-shrink-0">
                     <EmailIcon />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-sm md:text-base text-[#1a1a2e] font-semibold">Sales</p>
-                    <a href="mailto:sales@magnumopus.cloud" className="text-xs md:text-sm text-green-600 hover:underline break-all">
+                    <p className="text-base sm:text-lg md:text-xl text-[#a0a0a0] font-semibold">Sales</p>
+                    <a href="mailto:sales@magnumopus.cloud" className="text-sm sm:text-base md:text-lg text-green-400 hover:underline break-all">
                       sales@magnumopus.cloud
                     </a>
                   </div>
@@ -404,14 +404,14 @@ export default function MagnumOpus() {
 
           {/* About Us */}
           <section className="mb-8 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">About Us</h2>
-            <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-[#e5e7eb]">
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mb-3 md:mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">About Us</h2>
+            <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)] space-y-3">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
                 Magnum Opus Cloud Computing is a cloud computing company dedicated to providing users with a clean, secure,
                 and bloatware-free Windows 11 experience. We believe that everyone deserves access to a full-featured
                 operating system without intrusive AI, advertisements, or unnecessary software.
               </p>
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
                 Our mission is to deliver a seamless Windows 11 experience that can be accessed from any device — whether
                 you are on a phone, tablet, laptop, or desktop. With our cloud-hosted solution, you get the power of a full
                 Windows 11 desktop without the hassle of hardware limitations or bloatware.
@@ -421,30 +421,30 @@ export default function MagnumOpus() {
 
           {/* Privacy Policy */}
           <section className="mb-6 md:mb-8">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">Privacy Policy</h2>
-            <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-[#e5e7eb]">
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mb-4 md:mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">Privacy Policy</h2>
+            <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)]">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed mb-4">
                 At Magnum Opus Cloud Computing, we take your privacy seriously. We are committed to protecting your personal
                 information and being transparent about how we collect, use, and store your data.
               </p>
-              <div className="space-y-3 md:space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Information We Collect</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Information We Collect</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     We collect only the information necessary to provide our cloud computing services, including your email
                     address, account credentials, and usage data to improve our service quality.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">How We Use Your Information</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">How We Use Your Information</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     Your information is used solely to provide and improve our services. We do not sell, trade, or share
                     your personal information with third parties for marketing purposes.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Data Security</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Data Security</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     We implement industry-standard security measures to protect your data. All connections to our cloud
                     services are encrypted, and we recommend using a VPN when accessing our services on public networks.
                   </p>
@@ -455,47 +455,47 @@ export default function MagnumOpus() {
 
           {/* Terms of Use */}
           <section className="mb-8 md:mb-12">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] text-center mb-6 md:mb-8">Terms of Use</h2>
-            <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-[#e5e7eb]">
-              <p className="text-sm sm:text-base text-[#555] leading-relaxed mb-4 md:mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">Terms of Use</h2>
+            <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)]">
+              <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed mb-4">
                 By accessing and using Magnum Opus Cloud Computing services, you agree to comply with these Terms of Use.
                 Please read them carefully before using our cloud computing platform.
               </p>
-              <div className="space-y-3 md:space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">License and Usage</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">License and Usage</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     Magnum Opus Cloud Computing grants you a limited, non-exclusive, non-transferable license to use our
                     Windows 11 cloud computing service for personal or business purposes. You agree not to reverse engineer,
                     decompile, or modify the service or any related software.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Acceptable Use Policy</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Acceptable Use Policy</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     You agree not to use our service for any illegal activities, harassment, distribution of malware, or any
                     purpose that violates applicable laws. You are responsible for all activity that occurs under your
                     account.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Limitation of Liability</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Limitation of Liability</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     Magnum Opus Cloud Computing provides the service on an &quot;as-is&quot; basis. We are not liable for
                     any indirect, incidental, or consequential damages arising from your use of our service. We do not
                     guarantee uninterrupted access to the service.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Termination</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Termination</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     We reserve the right to suspend or terminate your access to our service at any time for violation of
                     these terms or for any reason we deem necessary to protect our platform and other users.
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-[#1a1a2e] mb-1">Changes to Terms</p>
-                  <p className="text-xs sm:text-sm text-[#555] leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl font-semibold text-[#a0a0a0] mb-1">Changes to Terms</p>
+                  <p className="text-base sm:text-lg text-[#8aaac8] leading-relaxed">
                     Magnum Opus Cloud Computing may modify these Terms of Use at any time. Your continued use of the service
                     constitutes acceptance of the updated terms. Please review this page periodically for changes.
                   </p>
@@ -507,16 +507,16 @@ export default function MagnumOpus() {
 
         {/* Footer */}
         <footer className="w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-t border-[rgba(0,120,212,0.3)] py-6 md:py-8 mt-auto">
-          <div className="max-w-[760px] mx-auto px-4 md:px-6 text-center">
-            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-6 mb-4 md:mb-5">
-              <a href="mailto:support@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs md:text-sm break-all">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-2 sm:gap-4 mb-4">
+              <a href="mailto:support@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-sm sm:text-base break-all">
                 support@magnumopus.cloud
               </a>
-              <span className="text-[rgba(150,190,240,0.3)]">|</span>
-              <a href="mailto:sales@magnumopus.cloud" className="text-[rgba(150,190,240,0.9)] hover:text-white transition-colors text-xs md:text-sm break-all">
+              <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
+              <a href="mailto:sales@magnumopus.cloud" className="text-[#8aaac8] hover:text-[#a0a0a0] transition-colors text-sm sm:text-base break-all">
                 sales@magnumopus.cloud
               </a>
-              <span className="text-[rgba(150,190,240,0.3)]">|</span>
+              <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
               <a
                 href="https://www.youtube.com/channel/UCPPj7NBKs_M2cgRxhx5auDw"
                 target="_blank"
@@ -527,7 +527,7 @@ export default function MagnumOpus() {
                 <YouTubeIcon />
               </a>
             </div>
-            <p className="text-[rgba(150,190,240,0.7)] text-xs md:text-sm">
+            <p className="text-[#8aaac8] text-sm sm:text-base md:text-lg">
               {new Date().getFullYear()} Magnum Opus Cloud Computing. All rights reserved.
             </p>
           </div>

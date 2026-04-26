@@ -99,6 +99,8 @@ export const viewport: Viewport = {
   themeColor: '#0a1628',
   width: 'device-width',
   initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({
@@ -107,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} bg-background`}>
+    <html lang="en" className={`${inter.variable} bg-background dark`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
