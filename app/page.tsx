@@ -345,12 +345,6 @@ export default function MagnumOpus() {
               </div>
             </div>
 
-            {/* Mobile Login */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
-              How To Login Via Smartphone
-            </h2>
-            <p className="text-center text-base sm:text-lg md:text-xl text-[#8aaac8] mb-8">Launching soon.</p>
-
             {/* Q&A */}
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               Questions &amp; Answers
