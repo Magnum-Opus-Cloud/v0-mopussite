@@ -272,7 +272,7 @@ export default function MagnumOpus() {
               </span>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] max-w-xl mx-auto leading-relaxed">
-              Access a full version of Windows 11 from anywhere. Connect from your phone, tablet, laptop, or desktop to a
+              Access a full version of Windows 11 from anywhere. Connect from your laptop or desktop to a
               complete Windows 11 operating system hosted securely in the cloud. No Copilot AI, no bloatware, no Microsoft
               account needed, and no advertising in our version of Windows 11.
             </p>
