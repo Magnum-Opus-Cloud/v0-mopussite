@@ -222,14 +222,6 @@ export default function MagnumOpus() {
                 className="h-10 sm:h-12 md:h-16 w-auto object-contain rounded-xl flex-shrink-0"
                 priority
               />
-              <Image
-                src="/images/flower.jpg"
-                alt="Decorative flower"
-                width={64}
-                height={64}
-                className="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0"
-                priority
-              />
               <div className="flex flex-col leading-tight min-w-0">
                 <span className="text-[#a0a0a0] font-bold text-sm sm:text-base md:text-xl tracking-wide truncate">Magnum Opus</span>
                 <span className="text-[#7ec8f4] font-medium text-sm sm:text-base md:text-lg tracking-wide truncate">Cloud Computing</span>
