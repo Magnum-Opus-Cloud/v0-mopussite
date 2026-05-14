@@ -125,7 +125,7 @@ const qaItems = [
   {
     question: "Q: How do I connect or use it?",
     answer:
-      "A: Go to our secure webpage login https://magnumopus2.live/guacamole/#/ for desktop and laptop login. Mobile is launching soon.",
+      "A: Go to our secure webpage login https://magnumopus2.live/guacamole/#/ for desktop and laptop login.",
   },
   {
     question: "Q: Which devices are supported?",
@@ -272,7 +272,7 @@ export default function MagnumOpus() {
               </span>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] max-w-xl mx-auto leading-relaxed">
-              Access a full version of Windows 11 from anywhere. Connect from your phone, tablet, laptop, or desktop to a
+              Access a full version of Windows 11 from anywhere. Connect from your laptop or desktop to a
               complete Windows 11 operating system hosted securely in the cloud. No Copilot AI, no bloatware, no Microsoft
               account needed, and no advertising in our version of Windows 11.
             </p>
@@ -280,34 +280,13 @@ export default function MagnumOpus() {
 
           {/* Launch Status Banner */}
           <section className="mb-8 md:mb-12">
-            {/* Intro Short Video */}
-            <div className="flex justify-center mb-6 md:mb-8">
-              <div className="w-full max-w-[320px] aspect-[9/16] rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
-                <iframe
-                  src="https://www.youtube.com/embed/gvzp1IO_1ok"
-                  title="Magnum Opus Cloud Computing - Introduction"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
+
 
             {/* Desktop Login Instructions */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Desktop &amp; Laptop
             </h2>
-            
-            {/* Video Tutorial */}
-            <div className="w-full aspect-video mb-6 md:mb-8 rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
-              <iframe
-                src="https://www.youtube.com/embed/7TIDAVf7_XE"
-                title="How To Login Via Desktop & Laptop - Video Tutorial"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
+
             
             <div className="bg-[#0f1f3d] rounded-xl p-4 sm:p-5 md:p-6 border border-[rgba(0,120,212,0.25)] mb-8 space-y-4">
               <p className="text-base sm:text-lg md:text-xl text-[#8aaac8] leading-relaxed">
