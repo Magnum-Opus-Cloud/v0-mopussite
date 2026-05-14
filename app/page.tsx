@@ -125,7 +125,7 @@ const qaItems = [
   {
     question: "Q: How do I connect or use it?",
     answer:
-      "A: Go to our secure webpage login https://magnumopus2.live/guacamole/#/ for desktop and laptop login. Mobile is launching soon.",
+      "A: Go to our secure webpage login https://magnumopus2.live/guacamole/#/ for desktop and laptop login.",
   },
   {
     question: "Q: Which devices are supported?",
