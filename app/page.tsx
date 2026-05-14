@@ -91,7 +91,7 @@ const faqStructuredData = {
       name: "Which devices are supported?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The following devices are supported: Android and Apple phones and tablets. In addition, we also support Windows, Apple, and Chromebook desktops and laptops.",
+        text: "The following devices are supported: Windows, Apple, Chromebook and Linux desktops and laptops.",
       },
     },
     {
@@ -130,7 +130,7 @@ const qaItems = [
   {
     question: "Q: Which devices are supported?",
     answer:
-      "A: The following devices are supported: Android and Apple phones and tablets. In addition, we also support Windows, Apple, and Chromebook desktops and laptops.",
+      "A: The following devices are supported: Windows, Apple, Chromebook and Linux desktops and laptops.",
   },
   {
     question: "Q: Are there support resources or tutorials on how to use it?",
