@@ -18,7 +18,7 @@ const structuredData = {
     addressCountry: "US",
   },
   areaServed: "US",
-  sameAs: ["https://www.youtube.com/@magnumopuscloudcomputing"],
+  sameAs: [],
   offers: {
     "@type": "Offer",
     name: "Windows 11 Cloud Desktop",
@@ -135,7 +135,7 @@ const qaItems = [
   {
     question: "Q: Are there support resources or tutorials on how to use it?",
     answer:
-      "A: Yes, we have 24 hour support via email. Also, we have easy-to-follow instructions and great YouTube tutorials.",
+      "A: Yes, we have 24 hour support via email and easy-to-follow instructions.",
   },
   {
     question: "Q: Do I need a Microsoft account to sign in and have Windows 11 with your service?",
@@ -167,18 +167,7 @@ function WindowsIcon() {
   )
 }
 
-function YouTubeIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      className="w-6 h-6 fill-current"
-      aria-hidden="true"
-    >
-      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-    </svg>
-  )
-}
+
 
 function EmailIcon() {
   return (
@@ -211,7 +200,7 @@ export default function MagnumOpus() {
 
         {/* Header */}
         <header className="flex flex-col w-full bg-gradient-to-r from-[#0a1628] via-[#132d54] to-[#0a1628] border-b border-[rgba(0,120,212,0.3)] shadow-lg sticky top-0 z-10 px-3 sm:px-6 md:px-8 pt-2 pb-2 gap-1">
-          {/* Top row: logo + name on left, YouTube on right */}
+          {/* Top row: logo + name on left, email on right */}
           <div className="flex items-center justify-between w-full gap-2">
             <div className="flex items-center gap-2 sm:gap-3 min-w-0">
               <Image
@@ -234,15 +223,6 @@ export default function MagnumOpus() {
                 <span className="text-[rgba(150,190,240,0.4)]">|</span>
                 <span className="text-[#8aaac8] whitespace-nowrap">sales@magnumopus.cloud</span>
               </div>
-              <a
-                href="https://www.youtube.com/@magnumopuscloudcomputing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors flex-shrink-0"
-                aria-label="Magnum Opus YouTube Channel"
-              >
-                <YouTubeIcon />
-              </a>
             </div>
           </div>
           {/* Mobile + tablet email rows — hidden on md and above */}
@@ -508,16 +488,6 @@ export default function MagnumOpus() {
               <span className="text-[#8aaac8] text-sm sm:text-base break-all">support@magnumopus.cloud</span>
               <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
               <span className="text-[#8aaac8] text-sm sm:text-base break-all">sales@magnumopus.cloud</span>
-              <span className="hidden sm:inline text-[rgba(150,190,240,0.3)]">|</span>
-              <a
-                href="https://www.youtube.com/@magnumopuscloudcomputing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[rgba(150,190,240,0.9)] hover:text-red-400 transition-colors"
-                aria-label="Magnum Opus YouTube Channel"
-              >
-                <YouTubeIcon />
-              </a>
             </div>
             <p className="text-[#8aaac8] text-sm sm:text-base md:text-lg">
               {new Date().getFullYear()} Magnum Opus Cloud Computing. All rights reserved.
