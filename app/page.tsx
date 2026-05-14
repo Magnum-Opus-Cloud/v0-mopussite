@@ -279,19 +279,6 @@ export default function MagnumOpus() {
           </section>
 
           <section className="mb-8 md:mb-12">
-            {/* Intro Short Video */}
-            <div className="flex justify-center mb-6 md:mb-8">
-              <div className="w-full max-w-[320px] aspect-[9/16] rounded-xl overflow-hidden border border-[rgba(0,120,212,0.25)]">
-                <iframe
-                  src="https://www.youtube.com/embed/gvzp1IO_1ok"
-                  title="Magnum Opus Cloud Computing - Introduction"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-
             {/* Desktop Login Instructions */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#a0a0a0] text-center mb-5 md:mb-8">
               How To Login Via Desktop &amp; Laptop
